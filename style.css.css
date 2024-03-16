@@ -195,9 +195,10 @@ html{
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: inherit;
     position: relative;
     z-index: 10;
+    text-decoration: none;
 }
 .sobremi button .overlay{
     position: absolute;
@@ -208,6 +209,7 @@ html{
     background-color: #1cb698;
     z-index: -1;
     transition: 1s;
+    text-decoration: none;
 }
 .sobremi button:hover .overlay{
     width: 100%;
