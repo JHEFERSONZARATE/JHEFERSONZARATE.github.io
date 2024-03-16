@@ -38,6 +38,9 @@ function efectoHabilidades(){
 window.onscroll=function(){
     efectoHabilidades();
 }
-function redireccionar(){
+function redireccionar1(){
     window.open("https://drive.google.com/drive/folders/1QVrsqWzBj-PD19dSTGh4skiCvPR56RIz?usp=drive_link");
+}
+function redireccionar2(){
+    window.open("https://drive.google.com/drive/folders/19pIo3ko5MMRLPu0oyrFqGTcFL9-OYAji?usp=drive_link");
 }
