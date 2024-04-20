@@ -44,3 +44,9 @@ function redireccionar1(){
 function redireccionar2(){
     window.open("https://drive.google.com/drive/folders/19pIo3ko5MMRLPu0oyrFqGTcFL9-OYAji?usp=drive_link");
 }
+function redireccionar3(){
+    window.open("https://drive.google.com/drive/folders/1Jb1doLcDazXGZeDVgPwULx7EXE8dflX-?usp=sharing");
+}
+function redireccionar4(){
+    window.open("https://drive.google.com/drive/folders/1Jb1doLcDazXGZeDVgPwULx7EXE8dflX-?usp=sharing");
+}
