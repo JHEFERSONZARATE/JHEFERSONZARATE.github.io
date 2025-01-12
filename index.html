@@ -73,7 +73,7 @@
                             </li>
                             <li>
                                 <strong>Email</strong>
-                                No disponible
+                                telecom.net@yopmail.com
                                 <!--telecom.net@gmail.com-->
                             </li>
                             <li>
@@ -338,47 +338,50 @@
             </div>
         </div>
     </section>
+---------------------------------------------
 
-    <!--SECCION CONTACTO-->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>Contacto</h2>
-            <div class="fila">
-                <!--FORMULARIO-->
-                <div class="col">
-                    <input type="text"placeholder="Tú Nombre ">
-                    <input type="text"placeholder="Número telefónico ">
-                    <input type="text"placeholder="Dirección de correo ">
-                    <input type="text"placeholder="Tema :">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje "></textarea>
-                    <button>
+---------------------------------
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+            <!--FORMULARIO-->
+            <div class="col">
+                <form id="contactForm">
+                    <input type="text" id="nombre" placeholder="Tú Nombre" required>
+                    <input type="text" id="telefono" placeholder="Número telefónico" required>
+                    <input type="email" id="correo" placeholder="Dirección de correo" required>
+                    <input type="text" id="tema" placeholder="Tema" required>
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
                         Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
-                <!--Mapa-->
-                <div class="col">
-                    <img src="imagenes/mapa.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                 Chorrillos, Lima - Perú
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile"></i>
-                                Llamanos:  No disponible
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email:  No disponible
-                            </li>
-                        </ul>
-                    </div>
+                </form>
+            </div>
+            <!--Mapa-->
+            <div class="col">
+                <img src="imagenes/mapa.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chorrillos, Lima - Perú
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile"></i>
+                            Llamanos: No disponible
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: telecom.net@yopmail.com
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!--footer-->
     <footer>

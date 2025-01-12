@@ -50,3 +50,37 @@ function redireccionar3(){
 function redireccionar4(){
     window.open("https://drive.google.com/drive/folders/1Jb1doLcDazXGZeDVgPwULx7EXE8dflX-?usp=sharing");
 }
+
+// Inicializar EmailJS
+(function () {
+    emailjs.init("TU_USER_ID"); // Reemplaza TU_USER_ID con tu ID de usuario de EmailJS
+})();
+
+// Manejar el envío del formulario
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+
+    // Obtener valores del formulario
+    const nombre = document.getElementById("nombre").value;
+    const telefono = document.getElementById("telefono").value;
+    const correo = document.getElementById("correo").value;
+    const tema = document.getElementById("tema").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    // Enviar correo con EmailJS
+    emailjs.send("TU_SERVICE_ID", "TU_TEMPLATE_ID", {
+        nombre: nombre,
+        telefono: telefono,
+        correo: correo,
+        tema: tema,
+        mensaje: mensaje,
+    }).then(
+        function (response) {
+            alert("Mensaje enviado correctamente.");
+            document.getElementById("contactForm").reset(); // Limpiar el formulario
+        },
+        function (error) {
+            alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+        }
+    );
+});
